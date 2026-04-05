@@ -1,4 +1,5 @@
 import Image from "next/image";
+import WaitlistForm from "./waitlist-form";
 
 const GITHUB_URL = "https://github.com/kronoguard";
 
@@ -121,14 +122,7 @@ export default function Home() {
             <p className="mt-3 max-w-md text-muted animate-fade-in-up-delay-2">
               Stay tuned!
             </p>
-            <a
-              href={GITHUB_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`mt-8 inline-flex items-center rounded-md border border-accent/40 px-5 py-2.5 text-sm font-medium text-accent transition hover:border-accent hover:bg-accent/10 ${linkFocus}`}
-            >
-              View on GitHub
-            </a>
+            <WaitlistForm />
           </div>
         </section>
       </main>
